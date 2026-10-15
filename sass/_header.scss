@@ -1,0 +1,111 @@
+@import 'variables';
+@import 'animations';
+
+.header {
+    background: $white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+    .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $primary-color;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            
+            span { color: $accent-color; }
+        }
+
+        .nav-menu ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+
+            a {
+                text-decoration: none;
+                color: $dark-color;
+                font-weight: 500;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    height: 90vh;
+    background: linear-gradient(135deg, rgba(2, 132, 199, 0.05) 0%, rgba(6, 182, 212, 0.1) 100%);
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    margin-top: 60px;
+
+    .hero-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 3rem;
+
+        .hero-text {
+            animation: fadeInDown 1s ease-out;
+
+            h1 {
+                font-size: 3rem;
+                color: $dark-color;
+                margin-bottom: 1rem;
+                
+                span { color: $primary-color; }
+            }
+
+            p {
+                color: lighten($dark-color, 20%);
+                font-size: 1.1rem;
+                margin-bottom: 2rem;
+                line-height: 1.6;
+            }
+
+            .btn-cta {
+                background: $primary-color;
+                color: $white;
+                padding: 0.8rem 2rem;
+                border: none;
+                border-radius: 30px;
+                font-size: 1rem;
+                cursor: pointer;
+                animation: pulseGlow 2s infinite;
+                transition: background 0.3s;
+
+                &:hover {
+                    background: darken($primary-color, 10%);
+                }
+            }
+        }
+
+        .hero-image {
+            animation: floatCard 4s ease-in-out infinite;
+            
+            img {
+                width: 100%;
+                border-radius: 20px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            }
+        }
+    }
+}
