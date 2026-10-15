@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare+ | Shërbime Mjekësore Profesionale</title>
+    <!-- Lidhja me FontAwesome për ikona mjekësore -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lidhja me skedarin CSS që do ta krijosh më vonë përmes Sass -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Header & Navigimi -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-staff-snake"></i> Medi<span>Care+</span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home">Kryefaqja</a></li>
+                    <li><a href="#services">Shërbimet</a></li>
+                    <li><a href="#about">Rreth Nesh</a></li>
+                    <li><a href="#contact">Kontakti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section (Pjesa Kryesore) -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Shëndetësi e Sigurt & <span>Profesionale</span></h1>
+                <p>Kujdesi mjekësor më i mirë për ju dhe familjen tuaj, i disponueshëm 24/7 me stafin tonë të specializuar dhe teknologjinë më moderne.</p>
+                <button class="btn-cta">Rezervo Vizitën</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Mjeku specialist">
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Seksioni i Shërbimeve (Këtu do të përdorim CSS Grid) -->
+    <section class="services" id="services">
+        <div class="section-title">
+            <h2>Shërbimet Tona</h2>
+            <p>Zgjidhje të avancuara mjekësore për çdo nevojë shëndetësore</p>
+        </div>
+        
+        <div class="services-grid">
+            <!-- Kartela 1 -->
+            <div class="service-card">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h3>Kardiologji</h3>
+                <p>Kontrolle të avancuara të zemrës, EKG, dhe monitorim të presionit arterial me aparatura moderne.</p>
+            </div>
+            <!-- Kartela 2 -->
+            <div class="service-card">
+                <i class="fa-solid fa-brain"></i>
+                <h3>Neurologji</h3>
+                <p>Diagnostikim dhe trajtim i çrregullimeve të sistemit nervor me ekspertë të fushës.</p>
+            </div>
+            <!-- Kartela 3 -->
+            <div class="service-card">
+                <i class="fa-solid fa-tooth"></i>
+                <h3>Stomatologji</h3>
+                <p>Kujdes i plotë dentar, pastrim, mbushje dhe ndërhyrje kirurgjikale estetike.</p>
+            </div>
+            <!-- Kartela 4 -->
+            <div class="service-card">
+                <i class="fa-solid fa-eye"></i>
+                <h3>Oftalmologji</h3>
+                <p>Kontroll i shikimit, trajtim i sëmundjeve të syrit dhe ndërhyrje me laser.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

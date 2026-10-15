@@ -1,0 +1,60 @@
+@import 'variables';
+
+.services {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 3rem;
+
+        h2 {
+            font-size: 2.5rem;
+            color: $dark-color;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            color: lighten($dark-color, 30%);
+        }
+    }
+
+    /* Këtu zbatohet CSS Grid për kartelat e shërbimeve */
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+
+        .service-card {
+            background: $white;
+            padding: 2.5rem 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid $primary-color;
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            }
+
+            i {
+                font-size: 2.5rem;
+                color: $primary-color;
+                margin-bottom: 1.5rem;
+            }
+
+            h3 {
+                color: $dark-color;
+                margin-bottom: 1rem;
+                font-size: 1.3rem;
+            }
+
+            p {
+                color: lighten($dark-color, 25%);
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'animations';
+@import 'header';
+@import 'services';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    background-color: $light-color;
+}
